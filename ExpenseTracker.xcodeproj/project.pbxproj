@@ -29,9 +29,30 @@
 		1074836E2E37863B0085C613 /* ExpenseTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		107483942E378CD60085C613 /* Exceptions for "ExpenseTracker" folder in "ExpenseTracker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/ExpenseTrackerTests.swift,
+			);
+			target = 107483532E37863A0085C613 /* ExpenseTracker */;
+		};
+		107483952E378CD60085C613 /* Exceptions for "ExpenseTracker" folder in "ExpenseTrackerTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/ExpenseTrackerTests.swift,
+			);
+			target = 107483632E37863B0085C613 /* ExpenseTrackerTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		107483562E37863A0085C613 /* ExpenseTracker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				107483942E378CD60085C613 /* Exceptions for "ExpenseTracker" folder in "ExpenseTracker" target */,
+				107483952E378CD60085C613 /* Exceptions for "ExpenseTracker" folder in "ExpenseTrackerTests" target */,
+			);
 			path = ExpenseTracker;
 			sourceTree = "<group>";
 		};
