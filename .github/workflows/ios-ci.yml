@@ -24,4 +24,5 @@ jobs:
             -sdk iphonesimulator \
             -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.2' \
             ONLY_ACTIVE_ARCH=YES
+            -only-testing:ExpenseTrackerTests
 
