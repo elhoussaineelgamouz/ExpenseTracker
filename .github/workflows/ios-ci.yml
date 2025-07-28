@@ -16,13 +16,20 @@ jobs:
 
       - name: Select Xcode version
         run: sudo xcode-select -s /Applications/Xcode_16.2.app
+        
+      - name: Reset & Boot Simulator
+        run: |
+          xcrun simctl shutdown all
+          xcrun simctl erase all
+          xcrun simctl boot "iPhone 16 Pro"
+          sleep 120
 
       - name: Build and Test
         run: |
           xcodebuild test \
-            -scheme ExpenseTrackerTests \
+            -scheme ExpenseTracker \
             -sdk iphonesimulator \
-            -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.2' \
+            -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=18.3' \
             ONLY_ACTIVE_ARCH=YES
             -only-testing:ExpenseTrackerTests
 
